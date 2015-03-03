@@ -10,6 +10,13 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UIButton *checkWeatherButton;
+@property (nonatomic, strong) IBOutlet UILabel *longitudeLabel;
+@property (nonatomic, strong) IBOutlet UILabel *lattitudeLabel;
+@property (nonatomic, strong) IBOutlet UISwitch *metricsSwitch;
+
+- (IBAction)checkWeather:(id)sender;
+- (IBAction)updateLocation:(id)sender;
 
 @end
 

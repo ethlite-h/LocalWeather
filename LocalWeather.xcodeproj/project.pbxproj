@@ -14,6 +14,8 @@
 		58197F401AA4E44B004A74C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58197F3F1AA4E44B004A74C1 /* Images.xcassets */; };
 		58197F431AA4E44B004A74C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58197F411AA4E44B004A74C1 /* LaunchScreen.xib */; };
 		58197F4F1AA4E44B004A74C1 /* LocalWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58197F4E1AA4E44B004A74C1 /* LocalWeatherTests.m */; };
+		58197F5A1AA4FAF8004A74C1 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58197F591AA4FAF8004A74C1 /* WeatherViewController.m */; };
+		58197F601AA53037004A74C1 /* WeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = 58197F5F1AA53037004A74C1 /* WeatherData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		58197F481AA4E44B004A74C1 /* LocalWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58197F4D1AA4E44B004A74C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58197F4E1AA4E44B004A74C1 /* LocalWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalWeatherTests.m; sourceTree = "<group>"; };
+		58197F581AA4FAF8004A74C1 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
+		58197F591AA4FAF8004A74C1 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
+		58197F5E1AA53037004A74C1 /* WeatherData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherData.h; sourceTree = "<group>"; };
+		58197F5F1AA53037004A74C1 /* WeatherData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 			children = (
 				58197F361AA4E44B004A74C1 /* AppDelegate.h */,
 				58197F371AA4E44B004A74C1 /* AppDelegate.m */,
+				58197F5E1AA53037004A74C1 /* WeatherData.h */,
+				58197F5F1AA53037004A74C1 /* WeatherData.m */,
+				58197F581AA4FAF8004A74C1 /* WeatherViewController.h */,
+				58197F591AA4FAF8004A74C1 /* WeatherViewController.m */,
 				58197F391AA4E44B004A74C1 /* ViewController.h */,
 				58197F3A1AA4E44B004A74C1 /* ViewController.m */,
 				58197F3C1AA4E44B004A74C1 /* Main.storyboard */,
@@ -168,6 +178,7 @@
 				TargetAttributes = {
 					58197F2E1AA4E44B004A74C1 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = RB955C8WH7;
 					};
 					58197F471AA4E44B004A74C1 = {
 						CreatedOnToolsVersion = 6.3;
@@ -219,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58197F601AA53037004A74C1 /* WeatherData.m in Sources */,
 				58197F3B1AA4E44B004A74C1 /* ViewController.m in Sources */,
+				58197F5A1AA4FAF8004A74C1 /* WeatherViewController.m in Sources */,
 				58197F381AA4E44B004A74C1 /* AppDelegate.m in Sources */,
 				58197F351AA4E44B004A74C1 /* main.m in Sources */,
 			);
@@ -299,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -337,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,7 +362,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LocalWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,7 +374,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LocalWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
